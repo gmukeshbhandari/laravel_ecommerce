@@ -3,7 +3,7 @@
 <div class="container custom-login">
 	<div class="row">
 		<div class="col-sm-4 offset-sm-4">
-			<form action="login" method="post">
+			<form action="{{ route('userlogin') }}" method="post">
         @csrf
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address</label>

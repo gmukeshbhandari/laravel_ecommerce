@@ -56,27 +56,6 @@ class ProductSeeder extends Seeder
             'category' => 'Mobile',
 			'gallery' => 'https://www.gadgetbytenepal.com/wp-content/uploads/2020/03/samsung-galaxy-m21-display-amoled.jpg',
 			'description' => '8 GB RAM /128 GB Storage'
-        ],
-		[
-            'name' => 'Samsung QLED TV Model QA55Q60B',
-            'price' => '219990',
-            'category' => 'Television',
-			'gallery' => 'https://images.samsung.com/is/image/samsung/p6pim/au/qa55q60bawxxy/gallery/au-qled-q60b-qa55q60bawxxy-531163229?$1300_1038_PNG$',
-			'description' => '55-inches UHD 4K Smart TV'
-        ],
-		[
-            'name' => 'Samsung QLED TV Model QA65Q60B',
-            'price' => '355990',
-            'category' => 'Television',
-			'gallery' => 'https://images.samsung.com/is/image/samsung/p6pim/au/qa65q60bawxxy/gallery/au-qled-q60b-qa65q60bawxxy-531163262?$1300_1038_PNG$',
-			'description' => '65-inches UHD 4K Smart TV'
-        ],
-		[
-            'name' => 'Haier Fridge',
-            'price' => '85800',
-            'category' => 'Fridge',
-			'gallery' => 'https://neostore.com.np/assets/uploads/HRF-3654BRC-E2.jpg',
-			'description' => 'Haier 345 Litres, Magic Convertible Inverter Top Mount Refrigerator HRF-3654BRC-E'
         ]
 		]);
     }

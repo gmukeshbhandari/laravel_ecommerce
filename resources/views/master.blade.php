@@ -26,5 +26,26 @@
         fill: currentColor;
       }
 
+	  img.slider-img{
+		height: 400px;
+	}	
+	.img-caption-custom
+	{
+		color: red;
+	}
+	
+	.trending-img{
+		height:100px;
+	}
+	.trending-items{
+		width:16%;
+		float:left;
+	}
+	.detail-img{
+		height:200px;
+	}
+	.search-box{
+		width: 18.75rem;
+	}
 	</style>
 	</html>

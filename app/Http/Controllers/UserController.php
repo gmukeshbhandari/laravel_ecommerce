@@ -20,9 +20,15 @@ class UserController extends Controller
        }
        else
        {
-		   $req->session()->put('user',$user);
+		   $req->session()->put('user',$user);  /*After Login with correct email and password, in user variable - detail of email is put so that after login in to website without loggin out user should not have to enter email and password */
         return redirect('/');
        }
         
+    }
+
+    public function logout(Request $req)
+    {
+      $req->session()->forget('user');
+      return redirect('/login');
     }
 }

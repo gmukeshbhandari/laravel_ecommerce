@@ -19,6 +19,12 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::post("/login",[UserController::class,'login']);
+Route::post("login",[UserController::class,'login'])->name('userlogin');
 
-Route::get('/',[ProductController::class,'index']);
+Route::get('/',[ProductController::class,'index'])->name('home');
+Route::view('/login', 'login'); //returns login.blade.php
+
+Route::get("/detail/{id}",[ProductController::class,'detail']);
+Route::get("/search",[ProductController::class,'search'])->name('searchheader');
+Route::post('/add-to-cart',[ProductController::class,'addtocart'])->name('add_to_cart');
+Route::get('/logout',[UserController::class,'logout'])->name('log_out');
