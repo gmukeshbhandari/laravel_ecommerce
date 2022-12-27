@@ -47,5 +47,6 @@
 	.search-box{
 		width: 18.75rem;
 	}
+
 	</style>
 	</html>

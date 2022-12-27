@@ -8,7 +8,7 @@ if (Session::has('user'))
 
 ?>
 
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light mb-3">
   <div class="container-fluid">
     <a class="navbar-brand" href="{{ route('home') }}">ECommerce</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@ if (Session::has('user'))
 
       <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Cart ({{ $total }})</a>
+        <a class="nav-link" href="{{ route('cart_list') }}">Cart ({{ $total }})</a>
       </li>
 
       @if(Session::has('user'))
