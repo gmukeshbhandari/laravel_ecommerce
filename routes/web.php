@@ -30,3 +30,6 @@ Route::post('/add-to-cart',[ProductController::class,'addtocart'])->name('add_to
 Route::get('/logout',[UserController::class,'logout'])->name('log_out');
 Route::get('/cart-list',[ProductController::Class,'cartList'])->name('cart_list');
 Route::post('/remove-cart-list',[ProductController::class,'removeCartlist'])->name('remove_cart');
+Route::get('/ordernow',[ProductController::class,'orderNow'])->name('order_now');
+Route::post('/orderplace',[ProductController::class,'orderPlace'])->name('order_place');
+Route::get('/myorder',[ProductController::class,'myOrder'])->name('myorder');
